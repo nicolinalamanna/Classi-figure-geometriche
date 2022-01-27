@@ -69,10 +69,10 @@ namespace Classi_figure_geometriche
             double result = Math.Sqrt(area * area);
             return result;
         }
-        public double diagonale(int perimetro, string Perimetro = "Perimetro") //from perimetro
-        {
-            double result = (perimetro * Math.Sqrt(2)) / 4;
-            return result;
-        }
+        //public double diagonale(int perimetro, string Perimetro = "Perimetro") //from perimetro
+        //{
+        //    double result = (perimetro * Math.Sqrt(2)) / 4;
+        //    return result;
+        //}
     }
 }

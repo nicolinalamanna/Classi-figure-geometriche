@@ -70,9 +70,9 @@ namespace Classi_figure_geometriche
                 //lato = quadrato.lato(area);
                 //diagonale = quadrato.diagonale(lato);
                 //perimetro = quadrato.perimetro(area); //quadrato.perimetro(lato);
-                txbLato.Text = lato.ToString();
-                txbDiagonale.Text = diagonale.ToString();
-                txbPerimetro.Text = perimetro.ToString();
+                //txbLato.Text = lato.ToString();
+                //txbDiagonale.Text = diagonale.ToString();
+                //txbPerimetro.Text = perimetro.ToString();
             }
             else if (this.ActiveControl == txbArea)
             {
@@ -98,7 +98,7 @@ namespace Classi_figure_geometriche
                 {
                     txbLato.Text = quadrato.lato(Convert.ToInt32(txbPerimetro.Text)).ToString();
                     txbArea.Text = quadrato.area(Convert.ToInt32(txbPerimetro.Text)).ToString();
-                    txbDiagonale.Text = quadrato.diagonale(Convert.ToInt32(txbPerimetro.Text)).ToString(); //NON LEGGE IL METODO DIAGONALE CON PARAMETRO PERIMETRO NELLA CLASSE QUADRATO
+                   //txbDiagonale.Text = quadrato.diagonale(Convert.ToInt32(txbPerimetro.Text)).ToString(); //NON LEGGE IL METODO DIAGONALE CON PARAMETRO PERIMETRO NELLA CLASSE QUADRATO
                 } catch
                 {
                     txbPerimetro.Text = "";
@@ -106,9 +106,9 @@ namespace Classi_figure_geometriche
                 //lato = quadrato.lato(perimetro);
                 //diagonale = quadrato.diagonale(lato);
                 //area = quadrato.arealato);
-                txbLato.Text = lato.ToString();
-                txbArea.Text = perimetro.ToString();
-                txbDiagonale.Text = diagonale.ToString();
+                //txbLato.Text = lato.ToString();
+                //txbArea.Text = perimetro.ToString();
+                //txbDiagonale.Text = diagonale.ToString();
             }
             else if (this.ActiveControl == txbPerimetro)
             {
@@ -144,9 +144,9 @@ namespace Classi_figure_geometriche
                 //lato = quadrato.lato(diagonale);
                 //area = quadrato.area(lato);
                 //perimetro = quadrato.perimetro(lato);
-                txbLato.Text = lato.ToString();
-                txbPerimetro.Text = perimetro.ToString();
-                txbArea.Text = area.ToString();
+                //txbLato.Text = lato.ToString();
+                //txbPerimetro.Text = perimetro.ToString();
+                //txbArea.Text = area.ToString();
             }
             else if (this.ActiveControl == txbDiagonale)
             {
