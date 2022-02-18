@@ -36,6 +36,14 @@
             this.txbArea = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txbCirconferenza = new System.Windows.Forms.TextBox();
+            this.txbAreaCerchio = new System.Windows.Forms.TextBox();
+            this.txbDiametro = new System.Windows.Forms.TextBox();
+            this.txbRaggio = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txbLato
@@ -106,11 +114,87 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Area";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(744, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Circonferenza";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(933, 148);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 15);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Diametro";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(933, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 15);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Raggio";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(744, 148);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 15);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "AreaCerchio";
+            // 
+            // txbCirconferenza
+            // 
+            this.txbCirconferenza.Location = new System.Drawing.Point(744, 80);
+            this.txbCirconferenza.Name = "txbCirconferenza";
+            this.txbCirconferenza.Size = new System.Drawing.Size(100, 23);
+            this.txbCirconferenza.TabIndex = 12;
+            this.txbCirconferenza.TextChanged += new System.EventHandler(this.txbCirconferenza_TextChanged);
+            // 
+            // txbAreaCerchio
+            // 
+            this.txbAreaCerchio.Location = new System.Drawing.Point(744, 166);
+            this.txbAreaCerchio.Name = "txbAreaCerchio";
+            this.txbAreaCerchio.Size = new System.Drawing.Size(100, 23);
+            this.txbAreaCerchio.TabIndex = 13;
+            this.txbAreaCerchio.TextChanged += new System.EventHandler(this.txbAreaCerchio_TextChanged);
+            // 
+            // txbDiametro
+            // 
+            this.txbDiametro.Location = new System.Drawing.Point(933, 166);
+            this.txbDiametro.Name = "txbDiametro";
+            this.txbDiametro.Size = new System.Drawing.Size(100, 23);
+            this.txbDiametro.TabIndex = 14;
+            this.txbDiametro.TextChanged += new System.EventHandler(this.txbDiametro_TextChanged);
+            // 
+            // txbRaggio
+            // 
+            this.txbRaggio.Location = new System.Drawing.Point(933, 80);
+            this.txbRaggio.Name = "txbRaggio";
+            this.txbRaggio.Size = new System.Drawing.Size(100, 23);
+            this.txbRaggio.TabIndex = 15;
+            this.txbRaggio.TextChanged += new System.EventHandler(this.txbRaggio_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 293);
+            this.ClientSize = new System.Drawing.Size(1098, 485);
+            this.Controls.Add(this.txbRaggio);
+            this.Controls.Add(this.txbDiametro);
+            this.Controls.Add(this.txbAreaCerchio);
+            this.Controls.Add(this.txbCirconferenza);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txbPerimetro);
@@ -136,5 +220,13 @@
         private TextBox txbArea;
         private Label label3;
         private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private TextBox txbCirconferenza;
+        private TextBox txbAreaCerchio;
+        private TextBox txbDiametro;
+        private TextBox txbRaggio;
     }
 }
